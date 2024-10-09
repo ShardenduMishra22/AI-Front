@@ -27,7 +27,6 @@ const MessageInput = () => {
         }
       } catch (e) {
         console.error(e);
-        toast.error('Failed to load history');
       }
     };
 
@@ -56,7 +55,6 @@ const MessageInput = () => {
       }
     } catch (e) {
       console.error(e);
-      toast.error('Failed to send message');
     }
 
     toast.success('Message sent!');
